@@ -1,0 +1,17 @@
+<h1>Hola! {{nombre}} </h1>
+<h3 [ngClass]="nombre =='Anónimo' ? 'anonimo':'saludo'"id="usuario" [innerText]="nombre">
+    <!-- NO INDICAMOS NADA EN LAS ETIQUETAS SINO QUE VIENE DEFINIDO POR PROPIEDAD -->
+</h3>  
+<p [ngStyle]="{color: 'orange'}">
+    Hola,¿Que tal?
+</p>
+<p [ngStyle]="myStyle">
+    Adiós, hasta pronto.
+</p>
+
+<!-- <button id="emit-alerta"(click)="alertaSaludo()">Mostrar Alerta</button> -->
+
+<button id="emit-alerta"(click)="enviarMensajeAlPadre()">Enviar mensaje de saludo al componente Padre</button> 
+
+<!-- Hacer uso del componente ListaBasica del modulo Lists -->
+<app-lista-basica></app-lista-basica>
