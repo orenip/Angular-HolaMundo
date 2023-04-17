@@ -4,8 +4,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 
+
 // Modulos Angular Material
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatButtonModule} from '@angular/material/button'
 
 //Locale para PIPES
 import {registerLocaleData} from '@angular/common';
@@ -57,7 +59,8 @@ import { EjemploAnimacionComponent } from './components/ejemplo-animacion/ejempl
     ReactiveFormsModule,
     //Importamos los modulos de Angulas Material y usamos en los formularios
     MatFormFieldModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatButtonModule
   ],
   providers: [
     //Registramos el Locale de ESpara qie los PIPES salgan en Español
